@@ -1,0 +1,76 @@
+.banner {
+  padding: 3.9%;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://ntwist.com/wp-content/uploads/2023/01/home-image-bg-v6.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.banner__left {
+  /* border: 1px solid red; */
+  width: 50%;
+  padding-top: 16.5%;
+  color: white;
+}
+
+.banner__left_heading {
+  font-size: 43px;
+  font-family: Inter;
+  font-weight: bold;
+  line-height: 44px;
+}
+
+.banner__left_btn {
+  font-size: 15px;
+  background-color: #007aff;
+  border-radius: 3px;
+  width: 155px;
+  height: 41px;
+  font-family: Roboto, sans-serif;
+  margin-top: 30px;
+}
+.banner__right {
+  /* border: 1px solid rgb(51, 255, 0); */
+  padding-top: 90px;
+}
+
+.banner__right img {
+    /* border: 1px solid rgb(51, 255, 0); */
+    width: 85%;
+    margin: auto;
+  }
+
+
+  /* Responsive styles */
+@media screen and (max-width: 768px) {
+  .banner {
+   flex-direction: column;
+  }
+
+  .banner__left {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding-top: 20%;
+    
+  }
+
+  .banner__left_heading {
+    font-size: 33px;
+    
+  }
+
+  .banner__right img {
+    /* border: 1px solid rgb(51, 255, 0); */
+    width: 100%;
+    margin: auto;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+  }
+  
+ 
