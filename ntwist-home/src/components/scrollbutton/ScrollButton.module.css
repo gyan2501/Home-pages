@@ -1,0 +1,19 @@
+/* Styles for the scroll-to-top button */
+.scrollBtn {
+  position: fixed; /* Positioned fixed on the screen */
+  bottom: 50px; /* Distance from the bottom */
+  right: 40px; /* Distance from the right */
+  width: 50px; /* Button width */
+  height: 50px; /* Button height */
+  border: none; /* No border */
+  border-radius: 50%; /* Rounded shape */
+  background-color: #003358; /* Background color */
+  color: white; /* Text color */
+  font-size: 24px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  display: flex; /* Flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Stack order */
+}
+

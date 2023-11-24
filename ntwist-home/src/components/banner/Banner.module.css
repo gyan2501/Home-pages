@@ -1,76 +1,80 @@
+/* Styling for the banner section */
 .banner {
-  padding: 3.9%;
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://ntwist.com/wp-content/uploads/2023/01/home-image-bg-v6.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
+  padding: 3.9%; /* Padding around the content */
+  width: 100%; /* Full width */
+  height: 100vh; /* Takes up 100% of the viewport height */
+  background-image: url("https://ntwist.com/wp-content/uploads/2023/01/home-image-bg-v6.png"); /* Background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  display: flex; /* Use flexbox layout */
 }
 
+/* Styling for the left section of the banner */
 .banner__left {
-  /* border: 1px solid red; */
-  width: 50%;
-  padding-top: 16.5%;
-  color: white;
+  width: 50%; /* Takes up 50% of the width */
+  padding-top: 16.5%; /* Padding at the top */
+  color: white; /* Text color */
 }
 
+/* Styling for the heading inside the left section */
 .banner__left_heading {
-  font-size: 43px;
-  font-family: Inter;
-  font-weight: bold;
-  line-height: 44px;
+  font-size: 43px; /* Font size */
+  font-family: Inter; /* Font family */
+  font-weight: bold; /* Bold text */
+  line-height: 44px; /* Line height */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initially positioned below */
+  animation: slideUp 1s ease forwards; /* Animation for showing the heading */
 }
 
-.banner__left_btn {
-  font-size: 15px;
-  background-color: #007aff;
-  border-radius: 3px;
-  width: 155px;
-  height: 41px;
-  font-family: Roboto, sans-serif;
-  margin-top: 30px;
-}
-.banner__right {
-  /* border: 1px solid rgb(51, 255, 0); */
-  padding-top: 90px;
-}
-
-.banner__right img {
-    /* border: 1px solid rgb(51, 255, 0); */
-    width: 85%;
-    margin: auto;
+/* Keyframe animation for the heading */
+@keyframes slideUp {
+  to {
+    opacity: 1; /* Show the heading */
+    transform: translateY(0); /* Move to its original position */
   }
+}
 
+/* Styling for the button inside the left section */
+.banner__left_btn {
+  font-size: 15px; /* Font size */
+  background-color: #007aff; /* Background color */
+  border-radius: 3px; /* Border radius */
+  width: 155px; /* Button width */
+  height: 41px; /* Button height */
+  font-family: Roboto, sans-serif; /* Font family */
+  margin-top: 30px; /* Top margin */
+}
 
-  /* Responsive styles */
+/* Styling for the right section of the banner */
+.banner__right {
+  padding-top: 90px; /* Padding at the top */
+}
+
+/* Styling for the image inside the right section */
+.banner__right img {
+  width: 85%; /* Image width */
+  margin: auto; /* Center the image horizontally */
+}
+
+/* Responsive styles for screens up to 768px width */
 @media screen and (max-width: 768px) {
   .banner {
-   flex-direction: column;
+    flex-direction: column; /* Change layout to column */
+    height: auto; /* Automatically adjust height */
   }
 
   .banner__left {
-    /* border: 1px solid red; */
-    width: 100%;
-    padding-top: 20%;
-    
+    width: 100%; /* Takes up full width */
+    padding-top: 20%; /* Adjusted padding at the top */
   }
 
   .banner__left_heading {
-    font-size: 33px;
-    
+    font-size: 30px; /* Adjusted font size for heading */
   }
 
   .banner__right img {
-    /* border: 1px solid rgb(51, 255, 0); */
-    width: 100%;
-    margin: auto;
+    width: 90%; /* Adjusted image width */
+    margin: auto; /* Center the image horizontally */
   }
 }
-
-
-@media screen and (max-width: 1024px) {
-    
-  }
-  
- 

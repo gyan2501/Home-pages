@@ -1,90 +1,81 @@
-.service{
-    /* border: 1px solid red; */
-   
-    padding: 2rem 5rem;
+
+/* Styling for the Services component */
+
+.service {
+  padding: 2rem 5rem; /* Padding around the service sections */
 }
 
-.service_container{
-    /* border: 1px solid green; */
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+.service_container {
+  height: 100%; /* Set height to occupy full available space */
+  display: flex; /* Display as flex container */
+  justify-content: space-between; /* Space between elements */
 }
 
-.service_content{
-    width: 49%;
-    /* border: 1px solid blue; */
+.service_content {
+  width: 49%; /* Width of the service content */
 }
 
-.service_content_heading{
-    font-size: 43px;
-    color: #ff3a2d;
-   line-height: 55.9px;
+.service_content_heading {
+  font-size: 43px; /* Font size for service headings */
+  color: #ff3a2d; /* Heading color */
+  line-height: 55.9px; /* Line height for headings */
 }
 
-.service_content_description{
-font-family: Roboto, sans-serif
-;
-text-align: justify;
-font-size: 16px;
-margin-top: 1rem;
-line-height: 26.56px;
+.service_content_description {
+  font-family: Roboto, sans-serif; /* Font family for descriptions */
+  text-align: justify; /* Justify text */
+  font-size: 16px; /* Font size for descriptions */
+  margin-top: 1rem; /* Top margin */
+  line-height: 26.56px; /* Line height for descriptions */
 }
 
-.content_btn{
-    width: 120px;
-    height: 39px;
-    color: white;
-    background-color: #ff3a2d;
-    margin-top: 3rem;
+.content_btn {
+  width: 120px; /* Button width */
+  height: 39px; /* Button height */
+  color: white; /* Button text color */
+  background-color: #ff3a2d; /* Button background color */
+  margin-top: 3rem; /* Top margin for the button */
 }
 
-.service_image_container{
-    /* border: 1px solid blue; */
-    width: 48%;
+.service_image_container {
+  width: 48%; /* Width of the image container */
 }
 
-.service_image{
-    width: 100%;
-    height: 100%;
-    filter: brightness(80%);
+.service_image {
+  width: 100%; /* Image width */
+  height: 100%; /* Image height */
+  filter: brightness(80%); /* Image brightness */
 }
 
+/* Media query for smaller screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
-
-    .service{
-        /* border: 1px solid red; */
-        padding: 15px;
-       height: auto;
-
-    }
-
-    .service_container{
-        /* border: 1px solid green; */
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .service_content{
-        width: 100%;
-        /* border: 1px solid blue; */
-    }
-
-    .service_image_container{
-        /* border: 1px solid blue; */
-        width: 100%;
-    }
-
-    .content_btn{
-        
-        margin-bottom: 3rem;
-    }
-
-    .service_content_heading{
-        font-size: 35px;
-        color: #ff3a2d;
-       line-height: 55.9px;
-    }
+  .service {
+    padding: 15px; /* Adjusted padding for smaller screens */
+    height: auto; /* Set height to auto */
   }
+
+  .service_container {
+    height: 100%; /* Set height to occupy full available space */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space between elements */
+  }
+
+  .service_content {
+    width: 100%; /* Full width for content on smaller screens */
+  }
+
+  .service_image_container {
+    width: 100%; /* Full width for image container on smaller screens */
+  }
+
+  .content_btn {
+    margin-bottom: 3rem; /* Bottom margin for the button */
+  }
+
+  .service_content_heading {
+    font-size: 35px; /* Adjusted font size for headings on smaller screens */
+    color: #ff3a2d; /* Heading color */
+    line-height: 55.9px; /* Line height for headings */
+  }
+}

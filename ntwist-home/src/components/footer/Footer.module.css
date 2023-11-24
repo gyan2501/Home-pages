@@ -1,70 +1,70 @@
+/* Styles for the footer section */
 .footer {
-  background-color: #081528;
-  width: 100%;
-  color: white;
-  height: 350px;
-  font-size: 16px;
-  padding: 2rem 0 3rem;
-  text-align: center;
-  margin-top: 12px;
+  background-color: #081528; /* Dark background color */
+  width: 100%; /* Full width */
+  color: white; /* White text color */
+  height: 350px; /* Fixed height */
+  font-size: 16px; /* Font size */
+  padding: 2rem 0 3rem; /* Padding values */
+  text-align: center; /* Center-align text */
+  margin-top: 12px; /* Top margin */
 }
 
-
+/* Styles for the footer logo/image */
 .footer__img {
-  width: 10%; 
-  margin: auto;
+  width: 10%; /* Image width */
+  margin: auto; /* Center the image horizontally */
 }
 
-
+/* Styles for the list in the footer */
 .footer__list {
-  display: flex; 
-  justify-content: center; 
-  column-gap: 1.5rem; 
-  list-style: none;
-  margin-top: 10px;
-  margin-bottom: 22px;
+  display: flex; /* Display items in a row */
+  justify-content: center; /* Center-align items */
+  column-gap: 1.5rem; /* Spacing between list items */
+  list-style: none; /* Remove default list styles */
+  margin-top: 10px; /* Top margin */
+  margin-bottom: 22px; /* Bottom margin */
 }
 
-
+/* Styles for the social links in the footer */
 .footer__social {
-  display: flex; 
-  justify-content: center; 
-  column-gap: 2rem;
-  margin: 2rem 0; 
+  display: flex; /* Display items in a row */
+  justify-content: center; /* Center-align items */
+  column-gap: 2rem; /* Spacing between social icons */
+  margin: 2rem 0; /* Margin */
 }
 
+/* Styles for the footer address */
 .footer__address {
-  color: #6b7788;
-  text-align: center;
+  color: #6b7788; /* Gray text color */
+  text-align: center; /* Center-align text */
 }
 
+/* Media queries for responsiveness */
 
-
-
+/* For screens up to 992px width */
 @media screen and (max-width: 992px) {
   .footer__social-link {
-    padding: 0.25rem; 
-    border-radius: 0.25rem; 
-    font-size: 16px; 
+    padding: 0.25rem; /* Padding for social links */
+    border-radius: 0.25rem; /* Border radius for social links */
+    font-size: 16px; /* Font size for social links */
   }
 }
 
-/* For extra small devices (less than 576px) */
+/* For extra small devices (less than 768px width) */
 @media screen and (max-width: 768px) {
   .footer {
-    width: 100%;
+    width: 100%; /* Full width for smaller devices */
   }
   .footer__img {
-    width: 20%;
+    width: 20%; /* Adjusted image width */
   }
-
   .footer__list {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Wrap list items */
   }
   .footer__address {
-    color: #6b7788;
-    text-align: center;
-    /* border: 1px solid rgb(200, 255, 0); */
-    flex-wrap: wrap;
+    color: #6b7788; /* Gray text color */
+    text-align: center; /* Center-align text */
+    flex-wrap: wrap; /* Wrap text for smaller devices */
   }
 }

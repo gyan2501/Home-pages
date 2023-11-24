@@ -1,0 +1,31 @@
+/* Styles for the dropdown */
+.dropdown {
+  position: fixed; /* Fixed positioning */
+  bottom: 30px; /* Positioned 30px from the bottom */
+  left: 30px; /* Positioned 30px from the left */
+  width: 110px; /* Set width to 110px */
+}
+
+/* Styles for the selectedCountry container */
+.selectedCountry {
+  border-radius: 3px; /* Rounded corners */
+  padding: 10px; /* Padding around the content */
+  cursor: pointer; /* Cursor style */
+  font-size: 18px; /* Font size */
+  background-color: #fff; /* Background color */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Box shadow effect */
+  font-weight: 800; /* Bold font weight */
+}
+
+/* Styles for the image inside selectedCountry */
+.selectedCountry img {
+  display: inline; /* Display the image inline */
+  width: 40%; /* Set image width to 40% */
+  margin-bottom: -5px; /* Adjust the bottom margin */
+}
+
+/* Styles for the span element inside selectedCountry */
+.selectedCountry span {
+  margin-top: -20px; /* Adjust top margin */
+  margin-left: 12px; /* Adjust left margin */
+}
