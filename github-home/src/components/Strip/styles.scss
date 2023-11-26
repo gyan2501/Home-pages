@@ -1,0 +1,9 @@
+$color-start: #7c72ff;
+$color-end: #3fb950;
+
+.pop-strip {
+  width: 4px; /* Adjust width as needed */
+  height: 330vh;
+  border-radius: 8px; /* Adjust height as needed */
+  background: linear-gradient(to bottom, $color-start, $color-end);
+}
